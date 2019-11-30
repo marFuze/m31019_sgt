@@ -5,12 +5,12 @@ import GradeRow from './grade-row';
 
 class GradeTable extends Component {
     componentDidMount(){
-        console.log('Grade Table Component Mounted');
+        //console.log('Grade Table Component Mounted');
         this.props.getGradeData();
     }
 
     render(){
-        console.log('grade table props:', this.props);
+        //console.log('grade table props:', this.props);
 
         const { grades } = this.props;
 

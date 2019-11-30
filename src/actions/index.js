@@ -22,7 +22,7 @@ export function getGradeData(){
         console.log('Get Grade Data REsponse', resp);
 
         dispatch({
-            type: 'GET_GRADE_DATA',
+            type: types.getGradeData,
             grades: resp.data
         });
     }
