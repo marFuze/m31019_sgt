@@ -11,6 +11,8 @@ export default (state = DEFAULT_STATE, action) => {
     switch(action.type){
         case types.GET_GRADE_DATA:
             return {...state, list: action.grades }
+        case types.ADD_GRADE_RECORD:
+            return {...state, list: [...state.list,action.grade]};
         default:
             return state;
     }
