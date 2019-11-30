@@ -1,6 +1,22 @@
 import types from './types';
 import axios from 'axios';
 
+// export const addGradeRecord = (gradeData) => async (dispatch) => {
+
+// }
+
+export function addGradeRecord(gradeData) {
+    return async function (dispatch) {
+        const resp = await axios.post('/api/grades', gradeData);
+
+        console.log('add response:', resp);
+        dispatch({
+            type: types.ADD_GRADE_RECORD,
+            grade: resp.data
+        });
+    }
+}
+
 // export async function getGradeData() {
 //     const resp = await axios.get('/api/grades');
 
@@ -22,11 +38,13 @@ export function getGradeData(){
         console.log('Get Grade Data REsponse', resp);
 
         dispatch({
-            type: types.getGradeData,
+            type: types.GET_GRADE_DATA,
             grades: resp.data
         });
     }
 }
+
+
 
 //dispatch send action to reducer
 //middleware catch function pass in dispatch 
