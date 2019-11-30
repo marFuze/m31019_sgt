@@ -20,41 +20,6 @@
       "grade": 92,
       "name": "Scott Bowler",
       "id": 4
-    },
-    {
-      "course": "math",
-      "createdAt": 1575141361065,
-      "grade": 83,
-      "name": "jim",
-      "id": 5
-    },
-    {
-      "course": "cs",
-      "createdAt": 1575142969954,
-      "grade": 100,
-      "name": "jim",
-      "id": 6
-    },
-    {
-      "course": "chem",
-      "createdAt": 1575143171470,
-      "grade": 100,
-      "name": "jill",
-      "id": 7
-    },
-    {
-      "course": "phy",
-      "createdAt": 1575143369574,
-      "grade": 100,
-      "name": "jack",
-      "id": 8
-    },
-    {
-      "course": "eng",
-      "createdAt": 1575143482695,
-      "grade": 99,
-      "name": "kathy",
-      "id": 9
     }
   ]
 }

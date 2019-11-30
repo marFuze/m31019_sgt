@@ -14,9 +14,9 @@ class GradeTable extends Component {
 
         const { grades } = this.props;
 
-        const rowElements = grades.map(grade => {
+        const rowElements = grades.map((grade, index) => {
             //return <GradeRow key={grade.id} id={grade.id} name={grade.name} course={grade.course} grade={grade.grade} />
-            return <GradeRow key={grade.id} {...grade} />
+            return <GradeRow key={grade.id} index={index} {...grade} />
         })
            ;
 
