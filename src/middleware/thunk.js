@@ -8,7 +8,7 @@ export default (store) => (next) => (action) => {
         return next(action);
     }
 
-    return action(store.dispatch);
+    return action(store.dispatch, store.getState);
 
 }
 
